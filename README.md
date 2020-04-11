@@ -1,2 +1,2 @@
-# devops-trainning
+# Linux Tips
 Docker, Kubernetes e Istio
