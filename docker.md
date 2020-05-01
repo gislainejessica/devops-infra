@@ -21,8 +21,6 @@
 2013: Dotcloud => pass pra rodar as aplicações. 
 Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usavam para gerenciar os containers. (Scripts lxc)
 
-## Day 2
-
 ## O que é o docker?
 - [x] Imagen (copy on write): 
     - Cada instrução faz uma camada
