@@ -42,3 +42,4 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
     - **sysADM e DevOps**:  mais controle e menor diferenças em nivel de servidor e não precisa se preocupar com as diferenças de tecnologias. (Controle e Segurança)
     - **Empressário**: Mais agilidade, mais sinergia entre equipes de dev e operação e economia de recursos. **(Economia e agilidade: tempo e dinheiro)**  
 
+### Instalando o docker
