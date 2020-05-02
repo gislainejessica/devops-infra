@@ -43,3 +43,16 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
     - **Empressário**: Mais agilidade, mais sinergia entre equipes de dev e operação e economia de recursos. **(Economia e agilidade: tempo e dinheiro)**  
 
 ### Instalando o docker
+- **Docker CE** free 
+- **Docker EE** paga
+
+- Digitando `curl -fsSL https://get.docker.com | bash` no terminal o SO é identificado e instala versão mais atual do Docker 
+
+- [x] Docker Client: o comandos cli
+- [x] Docker Server (Daemon): quem gerencia os containers
+
+**Pra não ter que usar root em todos os comandos**
+`sudo usermod -aG docker myUserDocker`
+
+`history`: mostra os ultimos comandos digitados no terminal
+
