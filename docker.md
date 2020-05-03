@@ -56,3 +56,28 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
 
 `history`: mostra os ultimos comandos digitados no terminal
 
+**Docker Comandos**
+- `docker ps -a` x `docker container ls -a` listagem de containers
+- `docker run` x `docker container run -ti hello-world` executar um container
+(-ti executa o container com terminal de interatividade, já roda o container e entra no container para fazer as interações internamente) => `ps -ef`
+
+- [x] Ao rodar um `docker run`: O `docker client` vai interpretar o comando e falar com o `docker Daemon` que vai verificar se o container existe localmente, se não ele faz o dowload da imagem e na seguencia cria um container dessa imagem localmente. Caso esteja em modo -ti vai mostrar a saida do entrypoint
+
+- [x] `docker conatainer attach idcontainer` para desconectar `ctrl+P+Q`
+
+- [x] `docker container run -d nignx` rodar com daemon, não rodar em primeiro plano pra não travar o terminal
+- [x] `docker conatiner exec -ti idcontainer comand` pra rodar os comando dentro do container, o processo pricipal é bloquenate
+
+
+- [x] ` docker container start [CONTAINER ID]`
+- [x]  `docker container stop [CONTAINER ID]`
+- [x]  `docker container restart [CONTAINER ID]`
+- [x]  `docker container pause [CONTAINER ID]`
+- [x]  `docker container unpause [CONTAINER ID]`
+- [x]  `docker container inspect [CONTAINER ID]`
+- [x]  `docker container logs -f [CONTAINER ID]`
+- [x]  `docker container rm [CONTAINER ID]`
+- [x]  `docker container attach [CONTAINER ID]`
+- [x]  `docker container rm -f [CONTAINER ID]`
+- [x]  `docker container exec -ti [CONTAINER ID] [COMANDO]`
+- [x]  `docker container run -d nginx`
