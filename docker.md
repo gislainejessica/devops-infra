@@ -42,7 +42,7 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
     - **sysADM e DevOps**:  mais controle e menor diferenças em nivel de servidor e não precisa se preocupar com as diferenças de tecnologias. (Controle e Segurança)
     - **Empressário**: Mais agilidade, mais sinergia entre equipes de dev e operação e economia de recursos. **(Economia e agilidade: tempo e dinheiro)**  
 
-### Instalando o docker
+## Instalando o docker
 - **Docker CE** free 
 - **Docker EE** paga
 
@@ -50,6 +50,8 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
 
 - [x] Docker Client: o comandos cli
 - [x] Docker Server (Daemon): quem gerencia os containers
+
+## Administrando containers docker
 
 **Pra não ter que usar root em todos os comandos**
 `sudo usermod -aG docker myUserDocker`
@@ -64,31 +66,31 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
 - [x] Ao rodar um `docker run`: O `docker client` vai interpretar o comando e falar com o `docker Daemon` que vai verificar se o container existe localmente, se não ele faz o dowload da imagem e na seguencia cria um container dessa imagem localmente. Caso esteja em modo -ti vai mostrar a saida do entrypoint
 
 -  `docker conatainer attach [CONTAINER ID]` para desconectar `ctrl+P+Q`
--  `docker conatiner exec -ti idcontainer comand` 
--  `docker container start [CONTAINER ID]`
--  `docker container stop [CONTAINER ID]`
--  `docker container restart [CONTAINER ID]`
--  `docker container pause [CONTAINER ID]`
--  `docker container unpause [CONTAINER ID]`
--  `docker container inspect [CONTAINER ID]`
--  `docker container logs -f [CONTAINER ID]`
--  `docker container rm [CONTAINER ID]`
--  `docker container attach [CONTAINER ID]`
--  `docker container rm -f [CONTAINER ID]`
+-  `docker conatiner exec -ti idcontainer comand` roda um comnado dentro do container
+-  `docker container start [CONTAINER ID]` inicia o container
+-  `docker container stop [CONTAINER ID]` para de rodar um container
+-  `docker container restart [CONTAINER ID]` reinicia container que foi parado
+-  `docker container pause [CONTAINER ID]` pausa o coantainer
+-  `docker container unpause [CONTAINER ID]` despausa o container
+-  `docker container inspect [CONTAINER ID]` mostrar as informações do container
+-  `docker container logs -f [CONTAINER ID]` maostra os logs gerados pela interação com o container
+-  `docker container rm [CONTAINER ID]` remove um container (deleta) que está parado
+-  `docker container attach [CONTAINER ID]` 
+-  `docker container rm -f [CONTAINER ID]` remove um container que está em execução
 -  `docker container exec -ti [CONTAINER ID] [COMANDO]` pra rodar os comando dentro do container, o processo pricipal é bloquenate
 -  `docker container run -d nginx`
 
-### Mémoria e CPU
-- docker container stats [CONTAINER ID]
-- docker container top [CONTAINER ID]
-- docker container run -d -m 128M --cpus 0.5 nginx
-- docker container update --memory 64M --cpus 0.4 nginx
-- docker container inspect [CONTAINER ID]
-- docker container stats [CONTAINER ID]
-- docker container top [CONTAINER ID]
+## Mémoria e CPU
+- `docker container stats [CONTAINER ID]`
+- `docker container top [CONTAINER ID]`
+- `docker container run -d -m 128M --cpus 0.5 nginx`
+- `docker container update --memory 64M --cpus 0.4 nginx`
+- `docker container inspect [CONTAINER ID]`
+- `docker container stats [CONTAINER ID]`
+- `docker container top [CONTAINER ID]`
 
 Comando executados dentro do container:
 
-- apt-get update
-- apt-get install stress
-- stress --cpu 1 --vm-bytes 128M --vm1
+- `apt-get update`
+- `apt-get install stress`
+- `stress --cpu 1 --vm-bytes 128M --vm1`
