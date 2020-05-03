@@ -63,21 +63,32 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
 
 - [x] Ao rodar um `docker run`: O `docker client` vai interpretar o comando e falar com o `docker Daemon` que vai verificar se o container existe localmente, se não ele faz o dowload da imagem e na seguencia cria um container dessa imagem localmente. Caso esteja em modo -ti vai mostrar a saida do entrypoint
 
-- [x] `docker conatainer attach idcontainer` para desconectar `ctrl+P+Q`
+-  `docker conatainer attach [CONTAINER ID]` para desconectar `ctrl+P+Q`
+-  `docker conatiner exec -ti idcontainer comand` 
+-  `docker container start [CONTAINER ID]`
+-  `docker container stop [CONTAINER ID]`
+-  `docker container restart [CONTAINER ID]`
+-  `docker container pause [CONTAINER ID]`
+-  `docker container unpause [CONTAINER ID]`
+-  `docker container inspect [CONTAINER ID]`
+-  `docker container logs -f [CONTAINER ID]`
+-  `docker container rm [CONTAINER ID]`
+-  `docker container attach [CONTAINER ID]`
+-  `docker container rm -f [CONTAINER ID]`
+-  `docker container exec -ti [CONTAINER ID] [COMANDO]` pra rodar os comando dentro do container, o processo pricipal é bloquenate
+-  `docker container run -d nginx`
 
-- [x] `docker container run -d nignx` rodar com daemon, não rodar em primeiro plano pra não travar o terminal
-- [x] `docker conatiner exec -ti idcontainer comand` pra rodar os comando dentro do container, o processo pricipal é bloquenate
+### Mémoria e CPU
+- docker container stats [CONTAINER ID]
+- docker container top [CONTAINER ID]
+- docker container run -d -m 128M --cpus 0.5 nginx
+- docker container update --memory 64M --cpus 0.4 nginx
+- docker container inspect [CONTAINER ID]
+- docker container stats [CONTAINER ID]
+- docker container top [CONTAINER ID]
 
+Comando executados dentro do container:
 
-- [x] ` docker container start [CONTAINER ID]`
-- [x]  `docker container stop [CONTAINER ID]`
-- [x]  `docker container restart [CONTAINER ID]`
-- [x]  `docker container pause [CONTAINER ID]`
-- [x]  `docker container unpause [CONTAINER ID]`
-- [x]  `docker container inspect [CONTAINER ID]`
-- [x]  `docker container logs -f [CONTAINER ID]`
-- [x]  `docker container rm [CONTAINER ID]`
-- [x]  `docker container attach [CONTAINER ID]`
-- [x]  `docker container rm -f [CONTAINER ID]`
-- [x]  `docker container exec -ti [CONTAINER ID] [COMANDO]`
-- [x]  `docker container run -d nginx`
+- apt-get update
+- apt-get install stress
+- stress --cpu 1 --vm-bytes 128M --vm1
