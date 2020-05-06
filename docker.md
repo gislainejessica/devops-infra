@@ -81,6 +81,7 @@ Março de 2013: DOCKER =>  Disponibilizou o cor de das ferramentas que eles usav
 -  `docker container run -d nginx`
 
 ## Mémoria e CPU
+Controlar a quantidade de memoria e cpu que será disponibilizado para cada container 
 - `docker container stats [CONTAINER ID]`
 - `docker container top [CONTAINER ID]`
 - `docker container run -d -m 128M --cpus 0.5 nginx`
