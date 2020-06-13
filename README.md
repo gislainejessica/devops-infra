@@ -19,3 +19,8 @@
 [Kubernetes](https://github.com/gislainejessica/devops-trainning/blob/master/kubernetes.md)
 
 [Istio](https://github.com/gislainejessica/devops-trainning/blob/master/istio.md)
+
+-----
+
+## AWS
+[aws](https://github.com/gislainejessica/devops-infra/blob/master/aws.md)
