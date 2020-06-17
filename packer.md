@@ -3,13 +3,20 @@
 
 ## Ferramenta para a criação de imagens
 
-[Packer](https://www.packer.io/)
+Link para a documentação oficial: [Packer](https://www.packer.io/)
+
+---
+
+**Conceitos**
 
 1) Introdução
+
 2) Estrutura do template do Packer
+
 3) Comandos do Packer
 
 --- 
+
 **Configuração AWS**
 
 4) IAM AWS
